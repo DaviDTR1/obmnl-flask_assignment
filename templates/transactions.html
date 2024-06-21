@@ -68,8 +68,10 @@
         {% if balance %}
         <h1 class="text-center">Total Balance: {{balance}}</h1>
         {% endif %}
-        <div class="d-flex justify-content-center">
-            <a class="btn btn-success" href="{{ url_for('add_transaction') }}">Add Transaction</a>
+        <div class="d-flex justify-content-center ">
+            <a class="btn btn-success px-2 mx-2" href="{{ url_for('add_transaction') }}">Add Transaction</a>
+            <a class="btn btn-success px-2 mx-2" href="{{ url_for('total_balance') }}">Get Total Balance</a>
+            <a class="btn btn-success px-2 mx-2" href="{{ url_for('search_transactions') }}">Search</a>
         </div>
     </div>
 </body>
